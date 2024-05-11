@@ -119,7 +119,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
     
 
-"""@Bot.on_message(filters.command('start') & filters.private)
+@Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
@@ -151,13 +151,13 @@ async def not_joined(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(buttons),
         quote = True,
         disable_web_page_preview = True
-    )"""
+    )
 
 
 
 #from config import FORCE_SUB_CHANNELS
 
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+"""from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Bot.on_message(filters.command("start") & filters.private)
 async def not_joined(client: Client, message: Message):
@@ -192,7 +192,7 @@ async def not_joined(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(buttons),
         quote=True,
         disable_web_page_preview=True
-    )
+    )"""
 
 
 
